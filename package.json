@@ -1,0 +1,22 @@
+{
+  "name": "iqgit-v1-migrator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Migrate IQ Git v1 on-chain data to v2 (per-repo commit tables, single iqpages deployed table).",
+  "scripts": {
+    "migrate": "tsx src/migrate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@iqlabs-official/git-sdk": "^0.1.1",
+    "@noble/hashes": "^1.8.0",
+    "@solana/web3.js": "^1.98.0",
+    "iqlabs-sdk": "npm:@iqlabs-official/solana-sdk@^0.1.21"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

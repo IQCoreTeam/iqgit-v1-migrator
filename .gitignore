@@ -1,0 +1,14 @@
+node_modules
+dist
+.tsbuildinfo
+*.tsbuildinfo
+.env
+.env.*
+.idea/
+.vscode/
+.DS_Store
+*.tgz
+
+# Never commit a wallet keypair to git, even by accident.
+keypair.json
+*-keypair.json
